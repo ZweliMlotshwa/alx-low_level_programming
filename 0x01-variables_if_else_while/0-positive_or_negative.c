@@ -1,3 +1,5 @@
+#include "Benchmark.h"
+#include "other_header.h"
 #include <stdio.h>
 #include <time.h>
 #include <stdio.h>
