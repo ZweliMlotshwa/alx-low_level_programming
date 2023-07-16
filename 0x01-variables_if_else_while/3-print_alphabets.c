@@ -12,9 +12,15 @@ int main(void)
 	c = 'a';
 	d = 'A';
 	while
-		(c <= 'z') {putchar(c); c++;}
+		(c <= 'z')
+		{putchar(c);
+			c++;
+		}
 	while
-		(d <= 'z') {putchar(d); d++;}
+		(d <= 'z')
+		{putchar(d);
+			d++;
+		}
 	putchar('\n');
 	return (0);
 }
