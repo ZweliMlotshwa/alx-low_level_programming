@@ -1,36 +1,41 @@
 #include "main.h"
 
 /**
- * print_times_table() - prints the 9 times table, starting with 0
+ * time_table - a function that prints the 9
+ * time table
+ *
+ * Description: it prints it followed by , nad 2 spaces
+ *
  */
-void times_table(void)
+void time_table(void)
 {
 	int i, j, k;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j < 10; j++)
-		{
-			k = j * i;
-			if (j == 10)
-			{
-				_putchar(k + '0');
-			}
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
 
-			if (k < 10 && j != 0)
+		for (j = 0; j <= 9; j++)
+		{
+			k = (i * j);
+
+			if ((k / 10) > 0)
 			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(k + '0');
-			} else if (k >= 10)
-			{
-				_putchar(',');
-				_putchar(' ');
 				_putchar((k / 10) + '0');
+			}
+			else
+			{
+				_putchar(' ');
+			}
 				_putchar((k % 10) + '0');
+			if (j < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
