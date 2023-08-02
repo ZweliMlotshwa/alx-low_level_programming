@@ -22,7 +22,7 @@ int prime_a(int a, int b)
  * @n: the input number
  * Return: 0 or 1
  */
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
 	return (prime_a(n, 2));
 }
