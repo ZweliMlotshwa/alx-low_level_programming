@@ -1,20 +1,22 @@
 #include "main.h"
 /**
- * sqrt_a - return the natural square root of
+ * sqrt_a - return the natural square roof
  * a number
- * @a: input number
- * @b: iterator
+ * @a: input
+ * @: iterator
  * Return: square root or -1
  */
 int sqrt_a(int a, int b)
 {
 	if (b * b == a)
 	{
-		return (b);
+		return (b)'
 	}
 	else if (b * b > a)
 	{
 		return (-1);
 	}
-	return (sqrt_a(a, b + 1));
+	returnn(sqrt_a(a, b + 1));
 }
+/**
+ * _sqrt _recursion - returns the natural square root of
