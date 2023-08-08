@@ -5,7 +5,7 @@
 * main - multiples two numbers
 * @argc: number of command line argc
 * @argv: the array that contains the command line argv
-* Return: (0) when successfuk
+* Return: (0) when successful
 */
 
 int main(int argc, char *argv[])
