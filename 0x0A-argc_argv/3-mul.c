@@ -1,28 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-/**
-* main - multiples two numbers
-* @argc: number of command line argc
-* @argv: the array that contains the command line argv
-* Return: (0) when successful
-*/
 
+/**
+* main - multiplies two numbers
+* @argc: number of command line arguments
+* @argv: the array that contains the command line arguments
+* Return: 0 on success, 1 on error
+*/
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
+	char *endptr1, *endptr2;
 
 	if (argc != 3)
 	{
-	printf("Error\n");
-	return (1);
+		printf("Error\n");
+		return (1);
 	}
 
-	/* Convert input arguments to integers*/
-	if (sscanf(argv[1], "%d", &num1) != 1 || sscanf(argv[2], "%d", &num2) != 1)
+	/* Convert input arguments to integers */
+	num1 = strtol(argv[1], &endptr1, 10);
+	num2 = strtol(argv[2], &endptr2, 10);
+
+	if (*endptr1 != '\0' || *endptr2 != '\0')
 	{
-	printf("Error\n");
-	return (1);
+		printf("Error\n");
+		return (1);
 	}
 
 	result = num1 * num2;
@@ -31,3 +35,4 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
