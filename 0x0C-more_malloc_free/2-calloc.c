@@ -5,7 +5,7 @@
  * *_memset -fills memory witth a constant byte
  * @s: memory area to be filled
  * @b: char to copy
- * @n; number of bytes to be filled
+ * @n: number of bytes to be filled
  *
  * Return: pointer to the memory area s
  */
