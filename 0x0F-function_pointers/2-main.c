@@ -47,13 +47,10 @@ int main(void)
 	int index;
 
 	index = int_index(array, 20, is_98);
-	printf("Index for is_98: %d\n", index);
-
+	printf("%d\n", index);
 	index = int_index(array, 20, abs_is_98);
-	printf("Index for abs_is_98: %d\n", index);
-
+	printf("%d\n", index);
 	index = int_index(array, 20, is_strictly_positive);
-	printf("Index for is_strictly_positive: %d\n", index);
-
+	printf("%d\n", index);
 	return (0);
 }
