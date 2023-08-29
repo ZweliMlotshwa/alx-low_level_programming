@@ -17,7 +17,7 @@ int main(void)
 
 	head = &hello;
 	new = malloc(sizeof(listint_t));
-	if (new == NULL)
+		if (new == NULL)
 	{
 		printf("Error\n");
 		return (1);
@@ -28,5 +28,5 @@ int main(void)
 	n = print_listint(head);
 	printf("-> %lu elements\n", n);
 	free(new);
-	return (0);
+		return (0);
 }
